@@ -12,4 +12,6 @@ What is computation? What does it mean to be computable? We’ll explore the bas
 
 * **Day 3-4:** [Hash Tables in C](https://github.com/LambdaSchool/Hash-Tables)
 
+
 #Initial Commit
+
