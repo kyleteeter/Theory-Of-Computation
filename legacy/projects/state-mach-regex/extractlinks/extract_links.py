@@ -11,13 +11,19 @@ if __name__ == '__main__':
 filename = sys.argv[1]
 
 # TODO Read HTML file
-
-
-# TODO Set up regex
-
+postive_match = []
+with open(f"{filename}", "r", encoding='utf-8') as f:
+  # TODO Set up regex
+    for line in f:
+      if 'http' in line:
+        link = (r"(http|https)\:\/\/[a-zA-Z0-9\-\.]+(?:(?!>).)*")
+        postive_match.append(link[0])
+f.close()
+for match in postive_match:
+  print(match)
 
 # TODO Find links using regex, save in list called 'matches'
-
+# (http).+[>]
 
 # Check matches, print results
 # TODO Read in links from answers.txt (hint...this is a CSV file), 
