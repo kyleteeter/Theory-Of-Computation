@@ -21,7 +21,7 @@ with open(f"{filename}", "r", encoding='utf-8') as f:
         print(link)
         if len(link) > 0:
           matches.append(link[0])
-f.close()
+    f.close()
 if matches:
   for match in matches:
     print(match)
