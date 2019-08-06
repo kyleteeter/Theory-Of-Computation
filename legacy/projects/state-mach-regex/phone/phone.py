@@ -5,6 +5,8 @@ line = input("Enter a phone number to validate or 'exit' when done. ")
 
 # TODO Define your regex
 
+phone_ex = r"\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})"
+
 
 while line != "exit":
     # TODO Find matches
@@ -18,6 +20,9 @@ while line != "exit":
     # TODO Else, break number up into area code, prefix, and suffic
     else: 
         # Find numbers
+        print(f"Area code: {matches.group(1)}")
+        print(f"Prefix: {matches.group(3)}")
+        print(f"Suffix: {matches.group(4)}")
 
     
     # As a stretch goal, you can modify your regex to search for country codes
